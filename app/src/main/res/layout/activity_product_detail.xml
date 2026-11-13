@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/luci_rosa_suave"
+    android:padding="20dp">
+
+    <Button
+        android:id="@+id/btnVolverCatalogo"
+        android:layout_width="80dp"
+        android:layout_height="36dp"
+        android:text="← Volver"
+        android:textSize="12sp"
+        android:backgroundTint="@color/luci_rosa_oscuro"
+        android:textColor="@color/luci_blanco"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/luci_blanco"
+        android:padding="20dp"
+        android:elevation="2dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:id="@+id/tvNombreProdDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base Líquida Matte HD"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/luci_rosa_principal"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvPrecioProdDetalle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$ 45.000 COP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/luci_texto_oscuro"
+            android:layout_marginBottom="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción:"
+            android:textStyle="bold"
+            android:textColor="@color/luci_texto_oscuro"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Base de maquillaje de alta cobertura con acabado mate natural. Controla el brillo y dura impecable todo el día en el clima de Cali."
+            android:textSize="14sp"
+            android:textColor="@color/luci_texto_gris"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Selector de Cantidad -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cantidad:"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/luci_texto_oscuro"/>
+
+            <Button
+                android:id="@+id/btnMenosCant"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="-"
+                android:textSize="18sp"
+                android:backgroundTint="@color/luci_rosa_suave"
+                android:textColor="@color/luci_texto_oscuro"/>
+
+            <TextView
+                android:id="@+id/tvCantidadItem"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/luci_texto_oscuro"/>
+
+            <Button
+                android:id="@+id/btnMasCant"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text="+"
+                android:textSize="18sp"
+                android:backgroundTint="@color/luci_rosa_suave"
+                android:textColor="@color/luci_texto_oscuro"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAniadirCarritoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="AÑADIR AL CARRITO"
+            android:textStyle="bold"
+            android:backgroundTint="@color/luci_rosa_principal"
+            android:textColor="@color/luci_blanco"/>
+    </LinearLayout>
+
+</LinearLayout>

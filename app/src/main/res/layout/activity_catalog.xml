@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/luci_rosa_suave">
+
+    <!-- Contenedor Principal (Header + Catálogo) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Barra Superior (Header) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:background="@color/luci_rosa_principal">
+
+            <!-- Botón Panel Categorías (Izquierda) -->
+            <Button
+                android:id="@+id/btnMenuCategorias"
+                android:layout_width="42dp"
+                android:layout_height="40dp"
+                android:text="☰"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/luci_rosa_oscuro"
+                android:textColor="@color/luci_blanco"
+                android:padding="0dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lucimakeup Store"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/luci_blanco"
+                android:gravity="center"/>
+
+            <!-- Ícono y Contador de Carrito (Derecha) -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <Button
+                    android:id="@+id/btnVerCarrito"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:text="🛒"
+                    android:textSize="16sp"
+                    android:backgroundTint="@color/luci_rosa_oscuro"
+                    android:textColor="@color/luci_blanco"
+                    android:padding="0dp"/>
+
+                <TextView
+                    android:id="@+id/tvContadorCarrito"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="top|end"
+                    android:text="0"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:background="@color/luci_blanco"
+                    android:textColor="@color/luci_rosa_principal"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Lista de Productos del Catálogo -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/tvCategoriaActual"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categoría: Todos los Productos"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/luci_texto_oscuro"
+                    android:layout_marginBottom="14dp"/>
+
+                <!-- Producto 1 -->
+                <LinearLayout
+                    android:id="@+id/cardProducto1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/luci_blanco"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Base Líquida Matte HD"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/luci_rosa_principal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rostro • Acabado aterciopelado de alta cobertura."
+                        android:textSize="13sp"
+                        android:textColor="@color/luci_texto_gris"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="$ 45.000 COP"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/luci_texto_oscuro"/>
+
+                        <Button
+                            android:id="@+id/btnVerDetalle1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:text="Ver Detalle"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/luci_rosa_principal"
+                            android:textColor="@color/luci_blanco"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Producto 2 -->
+                <LinearLayout
+                    android:id="@+id/cardProducto2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/luci_blanco"
+                    android:padding="16dp"
+                    android:layout_marginBottom="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Paleta de Sombras Rose Gold"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/luci_rosa_principal"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ojos • 12 tonos pigmentados satinados y matte."
+                        android:textSize="13sp"
+                        android:textColor="@color/luci_texto_gris"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="$ 62.000 COP"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/luci_texto_oscuro"/>
+
+                        <Button
+                            android:id="@+id/btnVerDetalle2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="36dp"
+                            android:text="Ver Detalle"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/luci_rosa_principal"
+                            android:textColor="@color/luci_blanco"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Panel Lateral Izquierdo (Drawer de Categorías y Cerrar Sesión) -->
+    <LinearLayout
+        android:id="@+id/panelLateralCategorias"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/luci_blanco"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Categorías"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/luci_rosa_principal"/>
+
+            <Button
+                android:id="@+id/btnCerrarPanel"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:text="✕"
+                android:textColor="@color/luci_texto_oscuro"
+                android:backgroundTint="@color/luci_rosa_suave"
+                android:padding="0dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnCatTodas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todas las categorías"
+            android:backgroundTint="@color/luci_rosa_suave"
+            android:textColor="@color/luci_texto_oscuro"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCatRostro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rostro"
+            android:backgroundTint="@color/luci_rosa_suave"
+            android:textColor="@color/luci_texto_oscuro"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCatOjos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ojos"
+            android:backgroundTint="@color/luci_rosa_suave"
+            android:textColor="@color/luci_texto_oscuro"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCatLabios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Labios"
+            android:backgroundTint="@color/luci_rosa_suave"
+            android:textColor="@color/luci_texto_oscuro"/>
+
+        <!-- Espacio flexible para empujar Cerrar Sesión al final del panel -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/btnCerrarSesion"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:text="Cerrar Sesión"
+            android:textStyle="bold"
+            android:backgroundTint="@color/luci_rosa_oscuro"
+            android:textColor="@color/luci_blanco"/>
+    </LinearLayout>
+
+</FrameLayout>

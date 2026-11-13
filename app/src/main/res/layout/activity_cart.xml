@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/luci_rosa_suave"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carrito de Compras"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/luci_rosa_principal"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/luci_blanco"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Productos seleccionados:"
+            android:textStyle="bold"
+            android:textColor="@color/luci_texto_oscuro"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/tvResumenItemsCarrito"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Base Líquida Matte HD (1 un) - $ 45.000"
+            android:textSize="14sp"
+            android:textColor="@color/luci_texto_gris"
+            android:layout_marginBottom="12dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total a pagar:"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/luci_texto_oscuro"/>
+
+            <TextView
+                android:id="@+id/tvTotalPagar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 45.000 COP"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/luci_rosa_principal"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnIrAEnvio"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="PROCEDER AL PAGO Y ENVÍO"
+        android:textStyle="bold"
+        android:backgroundTint="@color/luci_rosa_principal"
+        android:textColor="@color/luci_blanco"/>
+
+</LinearLayout>

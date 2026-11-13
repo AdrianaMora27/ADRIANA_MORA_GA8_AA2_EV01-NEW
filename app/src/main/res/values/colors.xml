@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="luci_rosa_principal">#D5006D</color>
+    <color name="luci_rosa_oscuro">#9B004E</color>
+    <color name="luci_rosa_suave">#FFF0F5</color>
+    <color name="luci_blanco">#FFFFFF</color>
+    <color name="luci_texto_oscuro">#2D2D2D</color>
+    <color name="luci_texto_gris">#6E6E6E</color>
+</resources>
